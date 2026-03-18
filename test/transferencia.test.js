@@ -25,7 +25,7 @@ describe    ('Transferencia', () => {
                 .send({ 
                     contaOrigem: 1, 
                     contaDestino: 2, 
-                    valor: 100.00
+                    valor: 7.00
                 });
               expect(response.status).to.equal(422);
               console.log(response.body);
