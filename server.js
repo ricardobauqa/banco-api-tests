@@ -26,6 +26,7 @@ app.post('/transferencias', (req, res) => {
 });
 
 app.post('/login', (req, res) => {
+    console.log('Received body:', req.body);
     const { username, password } = req.body;
 
     if (username === 'julio.lima' && password === '123456') {
