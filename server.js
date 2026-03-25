@@ -11,7 +11,7 @@ app.post('/transferencias', (req, res) => {
         return res.status(422).json({ message: 'Dados obrigatórios faltando' });
     }
     // Verificação simples de token
-    if (token !== '123456') {
+    if (token !== 'fake-jwt-token-123456') {
         return res.status(401).json({ message: 'Token inválido' });
     }
     // Sucesso
