@@ -2,6 +2,7 @@ const request = require('supertest');
 const { expect } = require('chai');
 require('dotenv').config();
 const { obterToken } = require('../helpers/autenticacao');
+const postTransferencias = require('../fixtures/postTransferencias.json');
 
 describe    ('Transferencia', () => {
     describe('POST/ Transferencias', () => {
@@ -10,15 +11,13 @@ describe    ('Transferencia', () => {
             token = await obterToken("julio.lima", "123456");
         });
         it('Deve retornar status 201 e a transferência realizada com sucesso', async () => {
-           const response = await request('http://localhost:3000')
+            const bodyTransferencias = {...postTransferencias, token: token };
+            bodyTransferencias.valor = 7;
+            const response = await request('http://localhost:3000')
                 .post('/transferencias')
                 .set('Content-Type', 'application/json')
-                .send({
-                    contaOrigem: 1,
-                    contaDestino: 2,
-            valor: 70.00,
-            token: token
-                });
+                .set('Authorization', `Bearer ${token}`)
+                .send(bodyTransferencias);
           expect(response.status).to.equal(201);
           console.log(response.body);
         });
