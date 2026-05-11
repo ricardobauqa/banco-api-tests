@@ -5,9 +5,15 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
+<<<<<<< HEAD
     "start": "2026-05-11T16:34:27.788Z",
     "end": "2026-05-11T16:34:27.847Z",
     "duration": 59,
+=======
+    "start": "2026-04-16T00:21:38.293Z",
+    "end": "2026-04-16T00:21:38.395Z",
+    "duration": 102,
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +24,11 @@
   },
   "results": [
     {
+<<<<<<< HEAD
       "uuid": "a0d38528-dbf7-418b-835e-c4e593b40f8d",
+=======
+      "uuid": "6a11f8c3-df0e-43fb-94a5-53eb1c1b1ada",
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +37,11 @@
       "tests": [],
       "suites": [
         {
+<<<<<<< HEAD
           "uuid": "198c43ce-3b67-4d65-9884-da42109fb1b4",
+=======
+          "uuid": "6a62838a-8c15-48df-a533-97572c8cc6d9",
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
           "title": "Login",
           "fullFile": "C:\\Mentoria2\\repo\\banco-api-tests\\test\\login.test.js",
           "file": "\\test\\login.test.js",
@@ -36,7 +50,11 @@
           "tests": [],
           "suites": [
             {
+<<<<<<< HEAD
               "uuid": "36fd03a6-4578-4a6f-bf5e-f6c9e87cb4d9",
+=======
+              "uuid": "790b6104-6e5b-4650-bb91-a8f458fe6c32",
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
               "title": "POST /login",
               "fullFile": "C:\\Mentoria2\\repo\\banco-api-tests\\test\\login.test.js",
               "file": "\\test\\login.test.js",
@@ -47,29 +65,46 @@
                   "title": "should return 200 and a token if the credentials are correct",
                   "fullTitle": "Login POST /login should return 200 and a token if the credentials are correct",
                   "timedOut": false,
+<<<<<<< HEAD
                   "duration": 37,
+=======
+                  "duration": 62,
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
                   "state": "passed",
-                  "speed": "fast",
+                  "speed": "medium",
                   "pass": true,
                   "fail": false,
                   "pending": false,
                   "context": null,
-                  "code": "const response = await request('http://localhost:3000')\n    .post('/login')\n    .set('Content-Type', 'application/json')\n    .send({ username: 'julio.lima', password: '123456' });\nexpect(response.status).to.equal(200);\nexpect(response.body).to.be.a('string');",
+                  "code": "const bodyLogin = {...postLogin};\n const response = await request('http://localhost:3000')\n     .post('/login')\n     .set('Content-Type', 'application/json')\n     .send({ username: 'julio.lima', password: '123456' });\n expect(response.status).to.equal(200);\n expect(response.body).to.be.a('string');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "80087adf-3166-4104-b435-a1e697e6883b",
                   "parentUUID": "36fd03a6-4578-4a6f-bf5e-f6c9e87cb4d9",
+=======
+                  "uuid": "ce08446b-4982-44c8-89c7-a58e96b87093",
+                  "parentUUID": "790b6104-6e5b-4650-bb91-a8f458fe6c32",
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "80087adf-3166-4104-b435-a1e697e6883b"
+=======
+                "ce08446b-4982-44c8-89c7-a58e96b87093"
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 37,
+=======
+              "duration": 62,
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
               "root": false,
               "rootEmpty": false,
               "_timeout": 20000
@@ -85,7 +120,11 @@
           "_timeout": 20000
         },
         {
+<<<<<<< HEAD
           "uuid": "9d153fdc-4664-4730-b0a8-6cb2c52ed1b4",
+=======
+          "uuid": "ba505cf8-43b9-4137-a4d7-3727a8f346c0",
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
           "title": "Transferencia",
           "fullFile": "C:\\Mentoria2\\repo\\banco-api-tests\\test\\transferencia.test.js",
           "file": "\\test\\transferencia.test.js",
@@ -94,11 +133,38 @@
           "tests": [],
           "suites": [
             {
+<<<<<<< HEAD
               "uuid": "f2cea03f-7d11-47a5-a6da-957fd46b9d40",
+=======
+              "uuid": "d6f4f30b-aa08-45a9-ac95-07703afa72ca",
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
               "title": "POST/ Transferencias",
               "fullFile": "C:\\Mentoria2\\repo\\banco-api-tests\\test\\transferencia.test.js",
               "file": "\\test\\transferencia.test.js",
+<<<<<<< HEAD
               "beforeHooks": [],
+=======
+              "beforeHooks": [
+                {
+                  "title": "\"before each\" hook in \"POST/ Transferencias\"",
+                  "fullTitle": "Transferencia POST/ Transferencias \"before each\" hook in \"POST/ Transferencias\"",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "token = await obterToken(\"julio.lima\", \"123456\");",
+                  "err": {},
+                  "uuid": "0475a36c-4427-418e-a606-736293cb0883",
+                  "parentUUID": "d6f4f30b-aa08-45a9-ac95-07703afa72ca",
+                  "isHook": true,
+                  "skipped": false
+                }
+              ],
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
               "afterHooks": [],
               "tests": [
                 {
@@ -112,10 +178,17 @@
                   "fail": false,
                   "pending": false,
                   "context": null,
+<<<<<<< HEAD
                   "code": "const token = await obterToken('julio.lima', '123456');\nconst bodyTransferencia = { ...postTransferencias, token, valor: 100.00 };\nconst response = await request('http://localhost:3000')\n  .post('/transferencias')\n  .set('Content-Type', 'application/json')\n  .send(bodyTransferencia);\nexpect(response.status).to.equal(201);\nconsole.log(response.body);",
                   "err": {},
                   "uuid": "19ee1b6d-f7be-4d9c-af3c-32ca06f75e31",
                   "parentUUID": "f2cea03f-7d11-47a5-a6da-957fd46b9d40",
+=======
+                  "code": "const bodyTransferencias = {...postTransferencias, token: token };\nbodyTransferencias.valor = 7;\nconst response = await request('http://localhost:3000')\n    .post('/transferencias')\n    .set('Content-Type', 'application/json')\n    .set('Authorization', `Bearer ${token}`)\n    .send(bodyTransferencias);\n          expect(response.status).to.equal(201);\n          console.log(response.body);",
+                  "err": {},
+                  "uuid": "2b298045-7a9a-452f-b731-5124ab0be12d",
+                  "parentUUID": "d6f4f30b-aa08-45a9-ac95-07703afa72ca",
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
                   "isHook": false,
                   "skipped": false
                 },
@@ -123,7 +196,11 @@
                   "title": "Deve retornar falha com status 422 quando dados obrigatórios estão faltando",
                   "fullTitle": "Transferencia POST/ Transferencias Deve retornar falha com status 422 quando dados obrigatórios estão faltando",
                   "timedOut": false,
+<<<<<<< HEAD
                   "duration": 6,
+=======
+                  "duration": 7,
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -132,21 +209,35 @@
                   "context": null,
                   "code": "const token = await obterToken('julio.lima', '123456');\nconst response = await request('http://localhost:3000')\n  .post('/transferencias')\n  .set('Content-Type', 'application/json')\n  .send({ \n      contaOrigem: 1, \n      contaDestino: 2, \n      valor: 7.00\n  });\nexpect(response.status).to.equal(422);\nconsole.log(response.body);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "87b6debe-e19a-4e32-82f0-1537b14d75a6",
                   "parentUUID": "f2cea03f-7d11-47a5-a6da-957fd46b9d40",
+=======
+                  "uuid": "f9c0d9f1-feb0-42cc-beb5-9d0226124a34",
+                  "parentUUID": "d6f4f30b-aa08-45a9-ac95-07703afa72ca",
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "19ee1b6d-f7be-4d9c-af3c-32ca06f75e31",
                 "87b6debe-e19a-4e32-82f0-1537b14d75a6"
+=======
+                "2b298045-7a9a-452f-b731-5124ab0be12d",
+                "f9c0d9f1-feb0-42cc-beb5-9d0226124a34"
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 12,
+=======
+              "duration": 10,
+>>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7
               "root": false,
               "rootEmpty": false,
               "_timeout": 20000
