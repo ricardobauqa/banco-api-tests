@@ -1,16 +1,5 @@
-<<<<<<< HEAD
-  {
-  "contaOrigem": 1, 
-  "contaDestino": 2, 
-  "valor": 7.00
-  }
-
-  
-=======
 {
   "contaOrigem": 1,
   "contaDestino": 2,
-  "valor": 7.00,
-  "token": ""
+  "valor": 7.00
 }
->>>>>>> 5cede85de46d5e7b222704f1a8a3f265b9ea9da7

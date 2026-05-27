@@ -1,5 +1,27 @@
 {
     "cSpell.words": [
         "mochawesome"
-    ]
+    ],
+    "files.associations": {
+        "*.md": "markdown"
+    },
+    "markdown.validate.enabled": true,
+    "markdown.updateLinksOnFileMove.enabled": "always",
+    "markdown.preview.breaks": true,
+    "markdown.preview.scrollEditorWithPreview": true,
+    "markdown.preview.scrollPreviewWithEditor": true,
+    "markdown.copyFiles.destination": {
+        "**/*.md": "${documentWorkspaceFolder}/assets"
+    },
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
+        "editor.minimap.enabled": false,
+        "editor.formatOnSave": false,
+        "files.trimTrailingWhitespace": false
+    }
 }
