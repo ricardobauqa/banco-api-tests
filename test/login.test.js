@@ -6,13 +6,15 @@ const postLogin = require('../fixtures/postLogin.json');
 describe ('Login', () => {
     describe('POST /login', () => {
         it('should return 200 and a token if the credentials are correct', async () => {
-            const bodyLogin = {...postLogin}
+            const bodyLogin = {...postLogin};
             const response = await request('http://localhost:3000')
                 .post('/login')
                 .set('Content-Type', 'application/json')
                 .send(bodyLogin);
+
             expect(response.status).to.equal(200);
-            expect(response.body).to.be.a('string');
+            expect(response.body).to.be.an('object');
+            expect(response.body.token).to.be.a('string').and.not.empty;
         });
     });
 });

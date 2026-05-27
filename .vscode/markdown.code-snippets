@@ -1,0 +1,38 @@
+{
+    "Wiki Link": {
+        "scope": "markdown",
+        "prefix": "[[",
+        "body": "[[${1:Nota}]]",
+        "description": "Insere um wikilink estilo Obsidian"
+    },
+    "Task Unchecked": {
+        "scope": "markdown",
+        "prefix": "todo",
+        "body": "- [ ] ${1:tarefa}",
+        "description": "Checklist não concluído"
+    },
+    "Task Checked": {
+        "scope": "markdown",
+        "prefix": "done",
+        "body": "- [x] ${1:tarefa}",
+        "description": "Checklist concluído"
+    },
+    "Callout Note": {
+        "scope": "markdown",
+        "prefix": "callout-note",
+        "body": [
+            "> [!note] ${1:Título}",
+            "> ${2:Conteúdo}"
+        ],
+        "description": "Callout tipo note do Obsidian"
+    },
+    "Callout Warning": {
+        "scope": "markdown",
+        "prefix": "callout-warning",
+        "body": [
+            "> [!warning] ${1:Título}",
+            "> ${2:Conteúdo}"
+        ],
+        "description": "Callout tipo warning do Obsidian"
+    }
+}

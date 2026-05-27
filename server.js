@@ -1,7 +1,12 @@
 const express = require('express');
 const app = express();
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json'); // Certifique-se de ter um arquivo swagger.json
 
 app.use(express.json());
+
+// Configuração do Swagger UI
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Rota de transference
 app.post('/transferencias', (req, res) => {
